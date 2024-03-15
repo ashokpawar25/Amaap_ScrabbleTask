@@ -17,12 +17,12 @@ public class ScrabbleManager
     {
         Map<Integer,List<String>> pointsTable =allocator.getPointsTable();
         int score = 0;
-        String [] alphabets = word.split("");
+        String [] alphabets = word.toUpperCase().split("");
         for(String alphabet:alphabets)
         {
             for(Map.Entry<Integer, List<String>> entry:pointsTable.entrySet())
             {
-                if(entry.getValue().contains(alphabet) || entry.getValue().contains(alphabet.toUpperCase()))
+                if(entry.getValue().contains(alphabet))
                 {
                     score = score + entry.getKey();
                 }
