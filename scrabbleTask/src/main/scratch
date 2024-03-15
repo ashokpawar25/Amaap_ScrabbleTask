@@ -1,0 +1,13 @@
+PointAllocator : Map<Integer,List<String>>
+                Integer :- Key
+                List<String> :- Values
+
+Find Score of word:
+ScrabbleManager:
+    word ="GUARDIAN";
+    Split the word to get alphabets separatly
+    String [] alphabets = word.split("");
+    InitialScore = 0;
+    For Each alphabet:
+        get Key
+        score = score + key;
