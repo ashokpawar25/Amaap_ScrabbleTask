@@ -1,5 +1,6 @@
 package com.ttp.scrabble.manager;
 
+import com.ttp.scrabble.exception.InvalideWordException;
 import com.ttp.scrabble.pointAllocator.PointAllocator;
 
 import java.util.List;
@@ -13,8 +14,8 @@ public class ScrabbleManager
         this.allocator=allocator;
     }
 
-    public int getScore(String word)
-    {
+    public int getScore(String word) throws InvalideWordException {
+        if (word == null || word.isEmpty()) throw new InvalideWordException("Word is not valide");
         Map<Integer,List<String>> pointsTable =allocator.getPointsTable();
         int score = 0;
         String [] alphabets = word.toUpperCase().split("");
