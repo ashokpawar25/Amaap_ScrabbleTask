@@ -53,4 +53,22 @@ public class ScrabbleManager
         }
         return score;
     }
+
+    public int getScoreForWordExtension(String word, int multiply) throws InvalideWordException {
+        if (word == null || word.isEmpty()) throw new InvalideWordException("Word is not valide");
+        Map<Integer,List<String>> pointsTable =allocator.getPointsTable();
+        int score = 0;
+        String [] alphabets = word.toUpperCase().split("");
+        for(String alphabet:alphabets)
+        {
+            for(Map.Entry<Integer, List<String>> entry:pointsTable.entrySet())
+            {
+                if(entry.getValue().contains(alphabet))
+                {
+                    score = score + entry.getKey();
+                }
+            }
+        }
+        return score*multiply;
+    }
 }

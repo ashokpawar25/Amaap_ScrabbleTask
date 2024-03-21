@@ -48,4 +48,19 @@ public class ScrabbleManagerTest {
         Assertions.assertEquals(16, doubleScore);
         Assertions.assertEquals(22, tripleScore);
     }
+
+    @Test
+    void shouldAbleToGetScoreForDoubleOrTripleWord() throws InvalideWordException {
+        //Arrange
+        PointAllocator allocator = new PointAllocator();
+        ScrabbleManager scrabbleManager = new ScrabbleManager(allocator);
+
+        //Act
+        int doubleScore = scrabbleManager.getScoreForWordExtension("GUARDIAN", 2);
+        int tripleScore = scrabbleManager.getScoreForWordExtension("GUARDIAN", 3);
+
+        //Assert
+        Assertions.assertEquals(20, doubleScore);
+        Assertions.assertEquals(30, tripleScore);
+    }
 }
