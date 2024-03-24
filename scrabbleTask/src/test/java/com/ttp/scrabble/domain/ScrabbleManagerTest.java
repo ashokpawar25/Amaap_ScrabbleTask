@@ -1,11 +1,10 @@
-package com.ttp.scrabble.manager;
+package com.ttp.scrabble.domain;
 
-import com.ttp.scrabble.exception.InvalideWordException;
-import com.ttp.scrabble.pointAllocator.PointAllocator;
+import com.ttp.scrabble.domain.exception.InvalideWordException;
+import com.ttp.scrabble.configuration.PointAllocator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ScrabbleManagerTest {

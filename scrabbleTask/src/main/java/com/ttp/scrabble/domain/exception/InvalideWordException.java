@@ -1,4 +1,4 @@
-package com.ttp.scrabble.exception;
+package com.ttp.scrabble.domain.exception;
 
 public class InvalideWordException extends Exception
 {

@@ -1,4 +1,4 @@
-package com.ttp.scrabble.pointAllocator;
+package com.ttp.scrabble.configuration;
 
 import java.util.HashMap;
 import java.util.List;

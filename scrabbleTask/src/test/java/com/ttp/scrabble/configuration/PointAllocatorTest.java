@@ -1,5 +1,6 @@
-package com.ttp.scrabble.pointAllocator;
+package com.ttp.scrabble.configuration;
 
+import com.ttp.scrabble.configuration.PointAllocator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

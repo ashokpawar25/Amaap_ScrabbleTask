@@ -1,7 +1,7 @@
-package com.ttp.scrabble.manager;
+package com.ttp.scrabble.domain;
 
-import com.ttp.scrabble.exception.InvalideWordException;
-import com.ttp.scrabble.pointAllocator.PointAllocator;
+import com.ttp.scrabble.domain.exception.InvalideWordException;
+import com.ttp.scrabble.configuration.PointAllocator;
 
 import java.util.List;
 import java.util.Map;
