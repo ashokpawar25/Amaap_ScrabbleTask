@@ -30,7 +30,9 @@ For example: GUARDIAN = 2 + 1 + 1 + 1 + 2 + 1 + 1 + 1 = 10.
   - `ScrabbleManager(PointAllocator allocator)`: Initializes the local variable.
 
 - **Behaviour**:
-  - `getScore(String word)`: get word as input and return the result.
+  - `getScore(String word)`: get word as input and return the score.
+  - `getScoreForLetterExtension(String word, List<String> lettersToChange, int multiply)`: change value of specific letters and return score
+  - `getScoreForWordExtension(String word, int multiply)`: get double or tiple score of word.
 
 
 ### PointAllocator Class
